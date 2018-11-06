@@ -1,0 +1,67 @@
+body{
+        background-image: url("../images/old_map.png");
+        overflow:auto;
+         
+     }
+
+.heading{
+    background-color: #009900;
+    color: cornsilk;
+    padding: 10px;
+    width: 350px;
+}
+.panel-default{
+    padding-left: 15px;
+}
+
+#para{
+    background-color: #deff9c;
+    color: blueviolet;
+    margin-top: -15px;
+}
+
+.col-rand-num{
+    background-color: palevioletred;
+    padding: 25px;
+}
+
+.margin{
+    margin-top:10px;
+    width: 100%;
+    display: flex;
+}
+
+.img-padding{
+    padding-left:unset;
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffc107;
+
+}
+#winLoss{
+    background-color: lightsalmon;
+}
+
+
+#miniheading{
+    background-color: #50a8ff;
+    padding: 10px;
+    width: 225px;
+    margin-top: 10px;
+}
+
+.totalScore{
+    background-color: #50a8ff;
+    font-size: 30px;
+    
+}
+
+#resultID{
+    color: mediumblue;
+    font-size: 30px;
+}
