@@ -23,6 +23,8 @@ body{
 .col-rand-num{
     background-color: palevioletred;
     padding: 25px;
+    font-size: 25px;
+    color: darkblue;
 }
 
 .margin{
@@ -45,6 +47,8 @@ body{
 }
 #winLoss{
     background-color: lightsalmon;
+    color: darkred;
+    font-size: 18px;
 }
 
 
@@ -53,15 +57,18 @@ body{
     padding: 10px;
     width: 225px;
     margin-top: 10px;
+    color: darkslategray;
 }
 
 .totalScore{
     background-color: #50a8ff;
     font-size: 30px;
+    color: darkslategray;
     
 }
 
 #resultID{
     color: mediumblue;
     font-size: 30px;
+    
 }

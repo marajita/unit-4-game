@@ -15,41 +15,41 @@ $(document).ready(function () {
 
     //this will add a totalCount while clicking blue crystal
     $("#blue").click(function () { 
-        console.log("blue clicked")
+       // console.log("blue clicked")
         totalCount = totalCount + blueRandom; 
-        console.log(totalCount);
+       // console.log(totalCount);
 
-        document.getElementById("totalScore").innerHTML = totalCount;
+        $("#totalScore").text(totalCount);
         checkWinOrLosses();
     });
 
     //this will add a totalCount while clicking green crystal
     $("#green").click(function () {
-        console.log("greenClicked")
+        //console.log("greenClicked")
         totalCount = totalCount + greenRandom;
-        console.log(totalCount);
+        //console.log(totalCount);
 
-        document.getElementById("totalScore").innerHTML = totalCount;
+        $("#totalScore").text(totalCount);
         checkWinOrLosses();
     });
 
     //this will add a totalCount while clicking red crystal
     $("#red").click(function () {
-        console.log("redClicked")
+        //console.log("redClicked")
         totalCount = totalCount + redRandom;
-        console.log(totalCount);
+        //console.log(totalCount);
 
-        document.getElementById("totalScore").innerHTML = totalCount;
+        $("#totalScore").text(totalCount);
         checkWinOrLosses();
     });
 
     //this will add a totalCount while clicking yellow crystal
     $("#yellow").click(function () {
-        console.log("yellowClicked")
+        //console.log("yellowClicked")
         totalCount = totalCount + yellowRandom;
-        console.log(totalCount);
+        //console.log(totalCount);
 
-        document.getElementById("totalScore").innerHTML = totalCount;
+        $("#totalScore").text(totalCount);
         checkWinOrLosses();
     });
 
@@ -65,15 +65,15 @@ function getRandomNum(min, max) {
 function checkWinOrLosses() {
     if (totalCount === randomNumber) { // if the totalCount=randomNum users wins and displays the message and updates the winCOunt
         winCount++;
-        document.getElementById("resultID").innerHTML = "You Won!!!";
-        document.getElementById("wins").innerHTML = winCount;
+        $("#resultID").text("You Won!!!");
+        $("#wins").text(winCount);
         startOrReset();
 
     }
     else if (totalCount > randomNumber) { //if the total count is greater than random number user losses and displays you lost message and update the lost count
         lossCount++;
-        document.getElementById("resultID").innerHTML = "You Lost!!!";
-        document.getElementById("losses").innerHTML = lossCount;
+        $("#resultID").text("You Lost!!!");
+        $("#losses").text(lossCount);
         startOrReset();
     }
 }
@@ -81,8 +81,8 @@ function checkWinOrLosses() {
 function startOrReset() { //this function will be used to start the game and will reset the game once the user wins or losses
     totalCount = 0; // total count will be showing as 0 at the begining of the game
     randomNumber = getRandomNum(18, 120);; // this is generating the random number between 18-20 and update the golbal variable
-    document.getElementById("randomNum").innerHTML = randomNumber; // display the randomNumber to html randomNum
-    document.getElementById("totalScore").innerHTML = totalCount; // display the totalCount to HTML totalScore
+    $("#randomNum").text(randomNumber); // display the randomNumber to html randomNum
+    $("#totalScore").text(totalCount); // display the totalCount to HTML totalScore
 
     //this is generating the random number between 1-12 for each crystal
     blueRandom = getRandomNum(1, 12);
