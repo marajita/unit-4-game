@@ -66,14 +66,16 @@ function checkWinOrLosses() {
     if (totalCount === randomNumber) { // if the totalCount=randomNum users wins and displays the message and updates the winCOunt
         winCount++;
         $("#resultID").text("You Won!!!");
-        $("#wins").text(winCount);
+        $("#wins").empty();
+        $("#wins").append(winCount);
         startOrReset();
 
     }
     else if (totalCount > randomNumber) { //if the total count is greater than random number user losses and displays you lost message and update the lost count
         lossCount++;
         $("#resultID").text("You Lost!!!");
-        $("#losses").text(lossCount);
+        $("#losses").empty();
+        $("#losses").append(lossCount);
         startOrReset();
     }
 }
